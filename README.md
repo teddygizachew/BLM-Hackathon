@@ -1,4 +1,4 @@
-# Project 1 - *Business Consultant Chat Bot*
+# *Business Consultant Chat Bot*
 
 The **Business Consultant Chat Bot** is a
 
