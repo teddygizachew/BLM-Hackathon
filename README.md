@@ -8,8 +8,7 @@ The LIFE3 APP - Let’s Small Business owners input non-technical description of
 Submitted by: **Omar Duran**, **Sabine Salandy**, **Estephanos Jebessa**, **Tewodros Amare**
  
 
-
-## Notes
+To support a more resilient future for black  business LIFE3 Product Management Services can provide free digital upgrade  by recruiting and leading development teams from Tech Talent Pipeline, and ux experience design teams, from CUNY Techworks.
 
 
 
