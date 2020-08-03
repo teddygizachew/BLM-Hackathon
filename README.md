@@ -15,4 +15,4 @@ Submitted by: **Omar Duran**, **Sabine Salandy**, **Estephanos Jebessa**, **Tewo
 
 ## License
 
-    Copyright [2020] [x]
+    Copyright [2020] [LIFE3]
