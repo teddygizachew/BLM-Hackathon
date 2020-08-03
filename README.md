@@ -1,11 +1,8 @@
 # *MWB DIGITAL ADVISOR*
 
-The **Business Consultant Chat Bot** is a
 
-Submitted by: **Omar Duran**
-Submitted by: **Sabine Salandy**
-Submitted by: **Estephanos Jebessa**
-Submitted by: **Tewodros Amare**
+
+Submitted by: **Omar Duran**, **Sabine Salandy**, **Estephanos Jebessa**, **Tewodros Amare**
  
 ## Video Walkthrough
 
