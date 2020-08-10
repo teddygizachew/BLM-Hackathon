@@ -1,0 +1,717 @@
+{
+  "intents": [
+    {
+      "intent": "product_designer",
+      "examples": [
+        {
+          "text": "product designer"
+        },
+        {
+          "text": "I'm looking for a product designer"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Mobile_Dev",
+      "examples": [
+        {
+          "text": "I want an app for my business"
+        },
+        {
+          "text": "mobile application"
+        },
+        {
+          "text": "application"
+        },
+        {
+          "text": "mobile app"
+        },
+        {
+          "text": "app"
+        },
+        {
+          "text": "I was looking for developers to build me an app"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "UI_Designers",
+      "examples": [
+        {
+          "text": "UI Designers"
+        },
+        {
+          "text": "I'm looking for UI designers"
+        },
+        {
+          "text": "UI"
+        },
+        {
+          "text": "User Interface designers"
+        },
+        {
+          "text": "I'm looking for User Interface designers"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "UX_Designers",
+      "examples": [
+        {
+          "text": "UX"
+        },
+        {
+          "text": "I'm looking for UI designers"
+        },
+        {
+          "text": "I'm looking for User Experience designers"
+        },
+        {
+          "text": "UX Designers"
+        },
+        {
+          "text": "User Experience"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "WebPage",
+      "examples": [
+        {
+          "text": "Webpage"
+        },
+        {
+          "text": "web"
+        },
+        {
+          "text": "page"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "WebType",
+      "examples": [
+        {
+          "text": "web app"
+        },
+        {
+          "text": "web page"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "WebDev",
+      "examples": [
+        {
+          "text": "WebDev"
+        },
+        {
+          "text": "website"
+        },
+        {
+          "text": "I'm looking for website developers"
+        },
+        {
+          "text": "I want a website for my business"
+        },
+        {
+          "text": "web app"
+        },
+        {
+          "text": "I'm looking for web developers"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "mobile_app",
+      "examples": [
+        {
+          "text": "mobile app"
+        },
+        {
+          "text": "app"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "designers_develpers",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "designers",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "developers",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "mobile_app",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "application",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "mobile app",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "iOS",
+          "synonyms": [
+            "iOS App",
+            "iPhone"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "android",
+          "synonyms": [
+            "android app"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "developers",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "developers",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "web_app",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "webapp",
+          "synonyms": [
+            "web app"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "web_app_services",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "delivery",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "e-commerce",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "shopify",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "UX",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "UX Designer",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "UX",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "User Experience",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "webpage",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "web page",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "landing page",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1596399247768",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1596399247813",
+      "previous_sibling": "handler_2_1596399247813"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_5_1596399247768",
+      "event_name": "input",
+      "dialog_node": "handler_2_1596399247813"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1596388803826",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1596388803838",
+      "previous_sibling": "handler_1_1596388803838"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_5_1596388803826",
+      "event_name": "input",
+      "dialog_node": "handler_1_1596388803838"
+    },
+    {
+      "type": "standard",
+      "title": "UX",
+      "output": {
+        "generic": [
+          {
+            "query": "UX Desinger, User Experience, UX",
+            "filter": "",
+            "query_type": "natural_language",
+            "response_type": "search_skill"
+          }
+        ]
+      },
+      "parent": "node_1_1596385685521",
+      "conditions": "@UX",
+      "dialog_node": "node_3_1596385711193",
+      "previous_sibling": "slot_5_1596388803826"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1596385685521",
+      "dialog_node": "slot_5_1596388803826"
+    },
+    {
+      "type": "standard",
+      "title": "Developers2",
+      "output": {
+        "generic": [
+          {
+            "query": "Developers, full stack development, back end development, front end development",
+            "filter": "",
+            "query_type": "natural_language",
+            "response_type": "search_skill"
+          }
+        ]
+      },
+      "parent": "node_6_1596415569673",
+      "conditions": "@designers_develpers:developers",
+      "dialog_node": "node_2_1596421871028",
+      "previous_sibling": "node_1_1596421856386"
+    },
+    {
+      "type": "standard",
+      "title": "Designers1",
+      "output": {
+        "generic": [
+          {
+            "query": "Designers, Designer, UI Designers, UX Designers",
+            "filter": "",
+            "query_type": "natural_language",
+            "response_type": "search_skill"
+          }
+        ]
+      },
+      "parent": "node_6_1596415569673",
+      "conditions": "@designers_develpers:designers",
+      "dialog_node": "node_1_1596421856386"
+    },
+    {
+      "type": "slot",
+      "parent": "Welcome",
+      "dialog_node": "slot_5_1596399247768",
+      "previous_sibling": "node_1_1596420383252"
+    },
+    {
+      "type": "standard",
+      "title": "Mobile App",
+      "output": {
+        "generic": [
+          {
+            "query": "Android, Android Studio, ios, swift, objective-c, ",
+            "filter": "",
+            "query_type": "natural_language",
+            "response_type": "search_skill"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "conditions": "@mobile_app",
+      "dialog_node": "node_1_1596420383252",
+      "previous_sibling": "node_6_1596415569673"
+    },
+    {
+      "type": "standard",
+      "title": "Web App",
+      "output": {
+        "generic": [
+          {
+            "title": "Are you looking for web designers or developers?",
+            "options": [
+              {
+                "label": "web designers",
+                "value": {
+                  "input": {
+                    "text": "Designers1"
+                  }
+                }
+              },
+              {
+                "label": "web developers",
+                "value": {
+                  "input": {
+                    "text": "Developers2"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "conditions": "@web_app",
+      "dialog_node": "node_6_1596415569673",
+      "previous_sibling": "node_1_1596414283650"
+    },
+    {
+      "type": "standard",
+      "title": "Web Page",
+      "output": {
+        "generic": [
+          {
+            "title": "Are you looking for designers or developers?",
+            "options": [
+              {
+                "label": "Designers",
+                "value": {
+                  "input": {
+                    "text": "Designers"
+                  }
+                }
+              },
+              {
+                "label": "Developers",
+                "value": {
+                  "input": {
+                    "text": "Developers"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "conditions": "@webpage",
+      "dialog_node": "node_1_1596414283650"
+    },
+    {
+      "type": "standard",
+      "title": "Developers",
+      "output": {
+        "generic": [
+          {
+            "query": "Developers, full stack development, back end development, front end development",
+            "filter": "",
+            "query_type": "natural_language",
+            "response_type": "search_skill"
+          }
+        ]
+      },
+      "parent": "node_1_1596414283650",
+      "conditions": "@designers_develpers:developers",
+      "dialog_node": "node_3_1596420407004",
+      "previous_sibling": "node_10_1596420399005"
+    },
+    {
+      "type": "standard",
+      "title": "Designers",
+      "output": {
+        "generic": [
+          {
+            "query": "Designers, Designer, UI Designers, UX Designers",
+            "filter": "",
+            "query_type": "natural_language",
+            "response_type": "search_skill"
+          }
+        ]
+      },
+      "parent": "node_1_1596414283650",
+      "conditions": "@designers_develpers:designers",
+      "dialog_node": "node_10_1596420399005"
+    },
+    {
+      "type": "standard",
+      "title": "UI",
+      "output": {
+        "generic": [
+          {
+            "query": "UI Designer, User Interface, UI",
+            "filter": "",
+            "query_type": "natural_language",
+            "response_type": "search_skill"
+          }
+        ]
+      },
+      "parent": "node_3_1596327524593",
+      "conditions": "@UI",
+      "dialog_node": "node_2_1596385703666"
+    },
+    {
+      "type": "standard",
+      "title": "Digital Marketing",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_2_1596403094841",
+      "previous_sibling": "node_10_1596387463500"
+    },
+    {
+      "type": "standard",
+      "title": "User Research",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1596403113879",
+      "previous_sibling": "node_2_1596403094841"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_1_1596403113879",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Product Designer",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I see that you are looking for a product designer."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "query": "product designer",
+            "filter": "",
+            "query_type": "natural_language",
+            "response_type": "search_skill"
+          }
+        ]
+      },
+      "conditions": "#product_designer",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_10_1596387463500",
+      "previous_sibling": "node_1_1596385685521"
+    },
+    {
+      "type": "standard",
+      "title": "UI Designers",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I see that you're looking for UI Designers."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#UI_Designers",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_3_1596327524593",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "UX Designers",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I see that you're looking for UX Designers. To best match you with your needs, what kind of service do you want to provide through your platform?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#UX_Designers",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1596385685521",
+      "previous_sibling": "node_3_1596327524593"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi. I am here to advise you on appropriate designers and developers to successfully meet your business goals"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Choose one of the digital service that you feel most closely aligns with your current business",
+            "options": [
+              {
+                "label": "Web App",
+                "value": {
+                  "input": {
+                    "text": "Web App"
+                  }
+                }
+              },
+              {
+                "label": "Web Page",
+                "value": {
+                  "input": {
+                    "text": "Web Page"
+                  }
+                }
+              },
+              {
+                "label": "User Research/UX Design",
+                "value": {
+                  "input": {
+                    "text": "User Research"
+                  }
+                }
+              },
+              {
+                "label": "Mobile App",
+                "value": {
+                  "input": {
+                    "text": "Mobile App"
+                  }
+                }
+              },
+              {
+                "label": "Digital Marketing",
+                "value": {
+                  "input": {
+                    "text": "Digital Marketing"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [
+    {
+      "text": "\"location\""
+    }
+  ],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Job Convo",
+  "language": "en",
+  "description": ""
+}
